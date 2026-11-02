@@ -1,6 +1,6 @@
 <div align="center">
 
-# OpsSentinel — AIOps & MLOps
+# OpsSentinel : AIOps & MLOps
 
 **Détecter les incidents de microservices avant qu'un seuil ne sonne, puis en trouver la cause racine.**
 
