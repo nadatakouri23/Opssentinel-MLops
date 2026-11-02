@@ -228,19 +228,7 @@ Plan sur 8 semaines.
 
 ---
 
-## 9. Équipe
-
-| Rôle | Membre |
-|---|---|
-| Données et modèle | [Prénom Nom] |
-| Plateforme et monitoring | [Prénom Nom] |
-| Agent et LLMOps | [Prénom Nom] |
-
-Projet de groupe réalisé dans le cadre du cours de MLOps.
-
----
-
-## 10. Références
+## 9. Références
 
 - **SMD** — Su, Y., Zhao, Y., Niu, C., Liu, R., Sun, W., Pei, D. *Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network* (OmniAnomaly). KDD 2019. [Dépôt](https://github.com/NetManAIOps/OmniAnomaly)
 - **RCAEval** — Pham, L. et al. *RCAEval: A Benchmark for Root Cause Analysis of Microservice Systems with Telemetry Data*. WWW 2025. [Dépôt](https://github.com/phamquiluan/RCAEval) · [Hugging Face](https://huggingface.co/datasets/phamquiluan/RCAEval)
