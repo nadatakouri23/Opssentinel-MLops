@@ -1,0 +1,38 @@
+# Application cible : TeaStore (DescartesResearch, licence Apache 2.0)
+# https://github.com/DescartesResearch/TeaStore
+services:
+  registry:
+    image: descartesresearch/teastore-registry
+  db:
+    image: descartesresearch/teastore-db
+    ports:
+      - "3307:3306"
+  persistence:
+    image: descartesresearch/teastore-persistence
+    environment:
+      HOST_NAME: "persistence"
+      REGISTRY_HOST: "registry"
+      DB_HOST: "db"
+      DB_PORT: "3306"
+  auth:
+    image: descartesresearch/teastore-auth
+    environment:
+      HOST_NAME: "auth"
+      REGISTRY_HOST: "registry"
+  image:
+    image: descartesresearch/teastore-image
+    environment:
+      HOST_NAME: "image"
+      REGISTRY_HOST: "registry"
+  recommender:
+    image: descartesresearch/teastore-recommender
+    environment:
+      HOST_NAME: "recommender"
+      REGISTRY_HOST: "registry"
+  webui:
+    image: descartesresearch/teastore-webui
+    environment:
+      HOST_NAME: "webui"
+      REGISTRY_HOST: "registry"
+    ports:
+      - "8080:8080"
